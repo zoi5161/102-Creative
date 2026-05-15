@@ -1,72 +1,49 @@
-import { Handshake, Lightbulb, Rocket, BarChart3 } from 'lucide-react';
+import { ClipboardList, CreditCard, Lightbulb, Rocket, BarChart3 } from 'lucide-react';
 import { ParticleBackground } from './ParticleBackground';
 
 type Step = {
   number: string;
   title: string;
-  items: string[];
-  icon: typeof Handshake;
+  desc: string;
+  icon: typeof ClipboardList;
   color: string;
 };
 
 const steps: Step[] = [
   {
     number: '01',
-    title: 'TIẾP NHẬN THÔNG TIN',
-    items: [
-      'Nhận thông tin dự án, visual, USP (Đặc điểm bán hàng nổi bật)',
-      'Xác định ngân sách, thời gian triển khai dự án',
-      'Nhận yêu cầu của KH về KPIs cho dự án',
-      'Đi thực tế dự án',
-      'Họp nội bộ triển khai',
-    ],
-    icon: Handshake,
+    title: 'Tiếp nhận & Audit',
+    desc: 'Tiếp nhận thông tin dự án, nghiên cứu đối tượng khách hàng tiềm năng và ký hợp đồng hợp tác.',
+    icon: ClipboardList,
     color: '#D8552B',
   },
   {
     number: '02',
-    title: 'XÂY DỰNG CHIẾN LƯỢC',
-    items: [
-      'Phân tích thị trường',
-      'Phân tích dự án (USP, khách hàng mục tiêu)',
-      'Phân tích SWOT dự án và đối thủ (trực tiếp & gián tiếp)',
-      'Nghiên cứu bài quảng cáo hiệu quả của dự án và đối thủ',
-      'Xác định Target Audience',
-      'Lên kế hoạch phân bổ ngân sách theo timeline dự án',
-      'Lên kế hoạch content & media theo ngân sách phân bổ',
-      'Thống nhất chiến lược với khách hàng',
-    ],
-    icon: Lightbulb,
+    title: 'Thanh toán',
+    desc: 'Đối tác chuyển khoản theo thông tin trên hợp đồng hoặc được ghim tại nhóm Zalo.',
+    icon: CreditCard,
     color: '#D4A24C',
   },
   {
     number: '03',
-    title: 'TRIỂN KHAI THỰC HIỆN',
-    items: [
-      'Chuẩn bị hệ thống BM (xác minh, fanpage, Domain gắn Pixel + CAPI)',
-      'Xây dựng Form chuẩn 3 giai đoạn: Cold - Warm - Hot',
-      'Soạn thảo 5 kịch bản (3 chính, 2 dự phòng)',
-      'Sản xuất media: mỗi kịch bản 3 file - video 9:16, video 3:4, ảnh tĩnh',
-      'Soạn thảo 15 nội dung quảng cáo (mỗi giai đoạn 5 nội dung)',
-      'Lên Camp Cold - ABO (tìm Content Win)',
-      'Lên Camp Warm - ReMKT',
-      'Lên Camp Test Hook (tăng Content Win)',
-      'Tối ưu và nâng ngân sách',
-      'Ổn định và mở rộng',
-    ],
-    icon: Rocket,
+    title: 'Lên kế hoạch & Chiến lược',
+    desc: 'Đề xuất ngân sách, thống nhất kịch bản nội dung và CPL (chi phí/khách hàng tiềm năng) dự kiến.',
+    icon: Lightbulb,
     color: '#3FA9B5',
   },
   {
     number: '04',
-    title: 'BÁO CÁO & TỔNG KẾT',
-    items: [
-      'Báo cáo tổng hợp: Chi phí - Lead - Hiệu quả - Insight',
-      'Đánh giá công việc theo Checklist: thời gian hoàn thành & tính hiệu quả mang lại',
-      'Rút kinh nghiệm, chuẩn bị phase tiếp theo',
-    ],
+    title: 'Triển khai & Tối ưu hóa',
+    desc: 'Sản xuất nội dung quảng cáo và thiết lập chiến dịch trong vòng 24 giờ. Theo dõi chỉ số hàng ngày, A/B testing.',
+    icon: Rocket,
+    color: '#D4A24C',
+  },
+  {
+    number: '05',
+    title: 'Báo cáo & Nghiệm thu',
+    desc: 'Gửi báo cáo định kỳ và nghiệm thu khi kết thúc chiến dịch.',
     icon: BarChart3,
-    color: '#7E2D3B',
+    color: '#D8552B',
   },
 ];
 
@@ -74,89 +51,64 @@ export function Process() {
   return (
     <section
       id="quy-trinh"
-      className="relative py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #0A2540 0%, #0D4070 40%, #1060A0 70%, #1976D2 100%)' }}
+      className="relative py-24 overflow-hidden bg-[#13304A]"
     >
       <ParticleBackground />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.07) 1.5px, transparent 1.5px)',
-          backgroundSize: '28px 28px',
-        }}
-      />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2
           className="font-headline text-center mb-4 text-white"
           style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}
         >
-          <span className="text-[#D4A24C]">QUY TRÌNH</span> LÀM VIỆC
+          <span className="text-[#D4A24C]">QUY TRÌNH</span> HỢP TÁC 5 BƯỚC
         </h2>
         <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-8"></div>
         <p
-          className="text-center max-w-3xl mx-auto mb-20 leading-relaxed"
+          className="text-center max-w-3xl mx-auto mb-16 leading-relaxed"
           style={{ color: 'rgba(255,255,255,0.75)', fontSize: '17px', lineHeight: 1.6 }}
         >
-          Từ buổi gặp đầu tiên đến doanh thu thực tế - 4 giai đoạn minh bạch, đo được, không bao giờ giấu giếm dữ liệu.
+          Quy trình rõ ràng, minh bạch — từ buổi gặp đầu tiên đến khi chiến dịch nghiệm thu thành công.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {steps.map((step) => {
             const Icon = step.icon;
             return (
-              <article key={step.number} className="group relative">
-                <div
-                  aria-hidden="true"
-                  className="absolute -top-12 -left-2 select-none pointer-events-none leading-none transition-opacity duration-300 group-hover:opacity-70"
-                  style={{
-                    fontSize: '120px',
-                    fontWeight: 900,
-                    color: 'transparent',
-                    WebkitTextStroke: `2px ${step.color}`,
-                    letterSpacing: '-0.06em',
-                    opacity: 0.45,
-                  }}
-                >
-                  {step.number}
-                </div>
-
-                <div
-                  className="relative z-10 pt-12 pb-7 px-7 bg-white border-l-[3px] shadow-sm group-hover:shadow-xl transition-shadow duration-300 h-full"
-                  style={{ borderColor: step.color }}
-                >
-                  <div className="flex items-center gap-4 mb-5">
-                    <div
-                      className="w-12 h-12 rounded-sm flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"
-                      style={{ backgroundColor: step.color }}
-                    >
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3
-                      className="font-headline"
-                      style={{ fontSize: '20px', fontWeight: 800, color: '#0A2540', letterSpacing: '-0.01em' }}
-                    >
-                      {step.title}
-                    </h3>
+              <article
+                key={step.number}
+                className="group relative rounded-sm p-6 bg-white/20 hover:bg-white/95 border border-white/25 [transition:background-color_400ms_ease,box-shadow_400ms_ease]"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div
+                    className="w-10 h-10 rounded-sm flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"
+                    style={{ backgroundColor: step.color }}
+                  >
+                    <Icon className="w-5 h-5 text-white" />
                   </div>
-
-                  <ul className="space-y-2">
-                    {step.items.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-3 text-[#1A1A1A]"
-                        style={{ fontSize: '14.5px', lineHeight: 1.55 }}
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full"
-                          style={{ backgroundColor: step.color }}
-                        />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <span
+                    className="font-headline leading-none transition-colors duration-300"
+                    style={{ fontSize: '28px', fontWeight: 900, color: step.color }}
+                  >
+                    {step.number}
+                  </span>
                 </div>
+
+                <h3
+                  className="font-headline mb-3 text-white group-hover:text-[#0A2540] transition-colors duration-300"
+                  style={{ fontSize: '15px', fontWeight: 700, lineHeight: 1.3 }}
+                >
+                  {step.title}
+                </h3>
+                <p
+                  className="text-white/75 group-hover:text-[#4B5563] transition-colors duration-300"
+                  style={{ fontSize: '13.5px', lineHeight: 1.6 }}
+                >
+                  {step.desc}
+                </p>
+
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-[3px] rounded-b-sm scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                  style={{ backgroundColor: step.color }}
+                />
               </article>
             );
           })}
@@ -165,4 +117,3 @@ export function Process() {
     </section>
   );
 }
-

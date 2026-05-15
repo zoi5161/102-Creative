@@ -12,7 +12,7 @@ const navItems = [
   { id: 'lien-he', label: 'Liên hệ' },
 ];
 
-export function Navigation() {
+export function Navigation({ onRecruitmentClick }: { onRecruitmentClick?: () => void }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -74,7 +74,7 @@ export function Navigation() {
             return (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => item.id === 'tuyen-dung' ? onRecruitmentClick?.() : scrollToSection(item.id)}
                 onMouseEnter={() => setHoveredId(item.id)}
                 className="relative px-5 py-2.5 transition-colors duration-200"
                 style={{ fontSize: '18px', fontWeight: 600 }}

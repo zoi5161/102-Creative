@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 import { ParticleBackground } from './ParticleBackground';
 
 const LEADS_ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbxtHFDs97VLdpGVYwDO2LPNuXKvABISw0lUtI_rEj_SNRZrTcQFSabU9IbK1IA-iAjN/exec';
+  'https://script.google.com/macros/s/AKfycbwZhjGLuSSkpIfLmZHACCNOvgrJDm0asy8TAuo34XeoWBFB4G2HgugdKmJxuiwk-ao0/exec';
 
 export function Contact() {
   const [formData, setFormData] = useState({

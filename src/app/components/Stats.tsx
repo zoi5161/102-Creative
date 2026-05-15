@@ -55,8 +55,7 @@ export function Stats() {
   return (
     <section
       id="gioi-thieu"
-      className="relative py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #061828 0%, #0A2540 35%, #0D3555 65%, #134570 100%)' }}
+      className="relative py-24 overflow-hidden bg-[#13304A]"
     >
       <ParticleBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-6">

@@ -12,8 +12,13 @@ export function Hero() {
     <section
       className="relative lg:min-h-screen w-full overflow-hidden flex items-center pt-28 pb-16"
       style={{
-        background:
-          'radial-gradient(ellipse 800px 600px at 80% 55%, rgba(212,162,76,0.13) 0%, transparent 60%), radial-gradient(ellipse 600px 400px at 5% 95%, rgba(216,85,43,0.07) 0%, transparent 55%), #F5F5F0',
+        background: '#F5F5F0',
+        backgroundImage: [
+          'radial-gradient(ellipse 520px 520px at 15% 20%, rgba(212,162,76,0.18) 0%, transparent 70%)',
+          'radial-gradient(ellipse 400px 400px at 75% 15%, rgba(63,169,181,0.14) 0%, transparent 70%)',
+          'radial-gradient(ellipse 460px 460px at 85% 75%, rgba(216,85,43,0.12) 0%, transparent 70%)',
+          'radial-gradient(ellipse 380px 380px at 30% 80%, rgba(212,162,76,0.10) 0%, transparent 70%)',
+        ].join(', '),
       }}
     >
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -59,7 +64,7 @@ export function Hero() {
       <img
         src={heroBanner}
         alt="102 Creative"
-        className="hidden lg:block absolute bottom-0 right-0 w-[50%] max-w-[720px] h-auto object-contain pointer-events-none select-none"
+        className="hidden lg:block absolute bottom-0 right-0 w-[62%] max-w-[900px] h-auto object-contain pointer-events-none select-none"
       />
     </section>
   );

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Toaster } from 'sonner';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
@@ -12,11 +13,15 @@ import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { FloatingButtons } from './components/FloatingButtons';
+import { RecruitmentModal } from './components/RecruitmentModal';
 
 export default function App() {
+  const [recruitmentOpen, setRecruitmentOpen] = useState(false);
+
   return (
     <div className="w-full">
-      <Navigation />
+      <Navigation onRecruitmentClick={() => setRecruitmentOpen(true)} />
+      <RecruitmentModal open={recruitmentOpen} onClose={() => setRecruitmentOpen(false)} />
       <Hero />
       <Stats />
       <Values />

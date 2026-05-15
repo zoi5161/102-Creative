@@ -5,8 +5,7 @@ import { ParticleBackground } from './ParticleBackground';
 export function Founder() {
   return (
     <section
-      className="relative py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(225deg, #071A2E 0%, #0A2540 45%, #0E2E50 75%, #133650 100%)' }}
+      className="relative py-24 overflow-hidden bg-[#13304A]"
     >
       <ParticleBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -36,17 +35,12 @@ export function Founder() {
               </p>
               <div className="w-16 h-1 bg-[#D4A24C]"></div>
               <p className="leading-relaxed" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-                Ông <strong style={{ color: 'white' }}>Hoàng Phi Long</strong> là{' '}
-                <span className="font-semibold" style={{ color: '#D8552B' }}>nhà sáng lập và điều hành 102 Creative</span>, đồng thời là người có{' '}
-                <span className="font-semibold" style={{ color: '#D4A24C' }}>hơn 10 năm kinh nghiệm thực chiến</span> trong lĩnh vực{' '}
-                <span className="font-semibold" style={{ color: '#3FA9B5' }}>bất động sản và marketing</span>.
+                Ông <strong style={{ color: 'white' }}>Hoàng Phi Long</strong> là nhà sáng lập và điều hành 102 Creative, đồng thời là người có{' '}
+                <span className="font-semibold" style={{ color: '#D4A24C' }}>hơn 10 năm kinh nghiệm thực chiến</span> trong lĩnh vực bất động sản và marketing.
               </p>
               <p className="leading-relaxed" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-                Dưới vai trò người đứng đầu, ông định hướng <strong style={{ color: 'white' }}>102 Creative</strong> trở thành đơn vị{' '}
-                <span className="font-semibold" style={{ color: '#D8552B' }}>không chỉ cung cấp giải pháp marketing</span>, mà còn đồng hành cùng doanh nghiệp trong việc{' '}
-                <span className="font-semibold" style={{ color: '#D4A24C' }}>nâng cao tư duy quản trị</span>,{' '}
-                <span className="font-semibold" style={{ color: '#3FA9B5' }}>xây dựng hệ thống bán hàng</span> và{' '}
-                <span className="font-semibold italic" style={{ color: '#FF4757' }}>phát triển đội ngũ bền vững</span>.
+                Dưới vai trò người đứng đầu, ông định hướng <strong style={{ color: 'white' }}>102 Creative</strong> trở thành đơn vị không chỉ cung cấp giải pháp marketing, mà còn đồng hành cùng doanh nghiệp trong việc nâng cao tư duy quản trị,{' '}
+                <span className="font-semibold" style={{ color: '#D4A24C' }}>xây dựng hệ thống bán hàng</span> và phát triển đội ngũ bền vững.
               </p>
             </div>
           </div>

@@ -89,7 +89,7 @@ export function Process() {
                 </div>
 
                 <div
-                  className="relative z-10 pt-20 pb-6 px-5 bg-white border-l-[3px] shadow-sm group-hover:shadow-xl transition-shadow duration-300"
+                  className="relative z-10 pt-10 pb-6 px-5 bg-white border-l-[3px] shadow-sm group-hover:shadow-xl transition-shadow duration-300"
                   style={{ borderColor: step.color }}
                 >
                   <div

@@ -79,7 +79,7 @@ export function Partners() {
 
       <div className="max-w-7xl lg:max-w-[1800px] mx-auto px-6">
         <div className="overflow-hidden">
-          <div className="flex gap-4 sm:gap-6 lg:gap-10">
+          <div className="flex gap-6">
             <AnimatePresence mode="popLayout" initial={false}>
               {columns.map((col) => (
                 <motion.div
@@ -89,7 +89,7 @@ export function Partners() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -240 }}
                   transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
-                  className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-6 lg:gap-10 bg-[#F5F5F0]"
+                  className="flex-1 min-w-0 flex flex-col gap-6"
                 >
                   {col.map((partner) => (
                     <LogoCard key={partner.name} partner={partner} />

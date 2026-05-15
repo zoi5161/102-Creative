@@ -6,7 +6,9 @@ import { Values } from './components/Values';
 import { Founder } from './components/Founder';
 import { Solutions } from './components/Solutions';
 import { Projects } from './components/Projects';
+import { Process } from './components/Process';
 import { Partners } from './components/Partners';
+import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { FloatingButtons } from './components/FloatingButtons';
@@ -21,7 +23,9 @@ export default function App() {
       <Founder />
       <Solutions />
       <Projects />
+      <Process />
       <Partners />
+      <Testimonials />
       <Contact />
       <Footer />
       <FloatingButtons />

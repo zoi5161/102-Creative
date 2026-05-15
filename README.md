@@ -60,25 +60,28 @@ npm run dev          # mở http://localhost:5173
 npm run build        # output vào dist/
 ```
 
-## Bảng màu thương hiệu (lấy từ logo)
+## Bảng màu thương hiệu
 
 | Token | HEX | Dùng cho |
 |---|---|---|
-| Petrol Teal | `#0E4D5C` | Primary, headings, nav, section CTA bg |
-| Logo Gold | `#F4A93C` | Accent, divider, hover, founder quote |
-| Logo Orange | `#E55C2D` | CTA chính (Tư vấn miễn phí, Gửi yêu cầu) |
-| Off-white | `#F8F6F0` | Background phụ (warm) |
+| Deep Navy | `#0A2540` | Primary — premium, trust; headings, nav, section CTA bg |
+| Gold | `#D4A24C` | Accent — luxury BĐS feel; divider, hover, founder quote |
+| Orange | `#FF6B35` | CTA chính (Tư vấn miễn phí, Gửi yêu cầu) |
+| White | `#FFFFFF` | Background chính |
+| Off-white | `#F5F5F0` | Background phụ (warm) |
 | Text | `#1A1A1A` | Chữ chính |
 | Text muted | `#6B7280` | Chữ phụ, area dự án |
 
 ## Asset đang dùng
 
-- ✅ Logo: `Logo.png` (chưa tích hợp — đang dùng text "102 CREATIVE")
-- ✅ Founder photo: `CEO.png` (chưa tích hợp — đang dùng stock photo)
-- ✅ Project images: `DuAn.png` (chưa tích hợp — đang dùng Unsplash placeholder)
-- ✅ Partner logos: `LogoDoiTac.png` (chưa tích hợp — đang dùng text)
+Ảnh chính đặt tại [`src/assets/images/`](src/assets/images/) và import qua alias `@/assets/images/...`.
 
-> Bước tiếp theo: tách các PNG composite trên thành asset rời và tích hợp vào component tương ứng.
+- ✅ Logo: `Logo.png` → đã tích hợp navbar ([Navigation.tsx](src/app/components/Navigation.tsx))
+- ✅ Founder photo: `CEO.png` → đã tích hợp section Founder ([Founder.tsx](src/app/components/Founder.tsx))
+- ⏳ Project images: `DuAn.png` (composite — chưa tách, đang dùng Unsplash placeholder)
+- ⏳ Partner logos: `LogoDoiTac.png` (composite — chưa tách, đang dùng text)
+
+> Bước tiếp theo: tách `DuAn.png` và `LogoDoiTac.png` thành các asset rời và tích hợp vào [Projects.tsx](src/app/components/Projects.tsx), [Partners.tsx](src/app/components/Partners.tsx).
 
 ## Contact
 

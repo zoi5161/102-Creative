@@ -3,14 +3,24 @@
 :root {
   --font-size: 16px;
 
-  /* 102 CREATIVE Color Palette */
-  --navy: #0E4D5C;
-  --gold: #F4A93C;
-  --orange: #E55C2D;
+  /* 102 CREATIVE — Brand Framework 2026 */
+  --amergy: #F15A24;     /* orange — ambition */
+  --creativity: #15B5B0; /* teal — insight */
+  --strategy: #0D4B66;   /* deep navy — strategy */
+  --growth: #FDBA32;     /* gold — growth */
+  --balance: #5BB36A;    /* green — balance */
+  /* Neutrals */
   --white: #FFFFFF;
-  --off-white: #F8F6F0;
+  --neutral-50: #F5F6F7;
+  --neutral-100: #E6E8EB;
+  --off-white: #FAF1D5;  /* warm cream for alternating sections */
   --text-primary: #1A1A1A;
+  --text-secondary: #333333;
   --text-muted: #6B7280;
+  /* Legacy aliases (kept so existing class references keep resolving) */
+  --navy: var(--strategy);
+  --gold: var(--growth);
+  --orange: var(--amergy);
 
   --background: var(--white);
   --foreground: var(--text-primary);

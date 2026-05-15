@@ -1,13 +1,40 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion } from 'motion/react';
+import logoLight from '@/assets/images/LogoTrang.png';
+
+const SCROLL_THRESHOLD = 50;
+
+const navItems = [
+  { id: 'gioi-thieu', label: 'Giới thiệu' },
+  { id: 'giai-phap', label: 'Giải pháp' },
+  { id: 'du-an', label: 'Dự án' },
+  { id: 'lien-he', label: 'Liên hệ' },
+];
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+
+      setIsScrolled(currentScrollY > SCROLL_THRESHOLD);
+
+      if (currentScrollY <= SCROLL_THRESHOLD) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY.current) {
+        setIsVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -20,41 +47,54 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
+      } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className={`font-headline tracking-tight transition-colors ${isScrolled ? 'text-[#0E4D5C]' : 'text-white'}`} style={{ fontSize: '28px', fontWeight: 800 }}>
-            102 CREATIVE
-          </div>
-        </div>
-        <div className="hidden md:flex items-center gap-8">
-          <button
-            onClick={() => scrollToSection('gioi-thieu')}
-            className={`transition-colors hover:text-[#F4A93C] ${isScrolled ? 'text-[#1A1A1A]' : 'text-white'}`}
-          >
-            Giới thiệu
-          </button>
-          <button
-            onClick={() => scrollToSection('giai-phap')}
-            className={`transition-colors hover:text-[#F4A93C] ${isScrolled ? 'text-[#1A1A1A]' : 'text-white'}`}
-          >
-            Giải pháp
-          </button>
-          <button
-            onClick={() => scrollToSection('du-an')}
-            className={`transition-colors hover:text-[#F4A93C] ${isScrolled ? 'text-[#1A1A1A]' : 'text-white'}`}
-          >
-            Dự án
-          </button>
-          <button
-            onClick={() => scrollToSection('lien-he')}
-            className={`transition-colors hover:text-[#F4A93C] ${isScrolled ? 'text-[#1A1A1A]' : 'text-white'}`}
-          >
-            Liên hệ
-          </button>
+      <div className="max-w-7xl mx-auto px-6 py-2 md:py-4 flex items-center justify-between">
+        <a
+          href="#"
+          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          className="relative flex items-center h-20 md:h-24"
+          aria-label="102 Creative"
+        >
+          <img
+            src={logoLight}
+            alt="102 Creative"
+            className="h-full w-auto object-contain"
+          />
+        </a>
+        <div
+          className="hidden md:flex items-center gap-2"
+          onMouseLeave={() => setHoveredId(null)}
+        >
+          {navItems.map((item) => {
+            const isHovered = hoveredId === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                onMouseEnter={() => setHoveredId(item.id)}
+                className="relative px-5 py-2.5 transition-colors duration-200"
+                style={{ fontSize: '18px', fontWeight: 600 }}
+              >
+                {isHovered && (
+                  <motion.span
+                    layoutId="nav-hover-pill"
+                    className="absolute inset-0 bg-[#D4A24C]/20 rounded-full"
+                    transition={{ type: 'spring', stiffness: 320, damping: 26, mass: 0.8 }}
+                  />
+                )}
+                <span
+                  className={`relative z-10 transition-colors duration-200 ${
+                    isHovered ? 'text-[#0A2540]' : 'text-[#1A1A1A]'
+                  }`}
+                >
+                  {item.label}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
     </nav>

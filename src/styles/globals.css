@@ -1,0 +1,96 @@
+/* Tailwind v4 đặt cursor mặc định của <button> là `default`. Khôi phục `pointer` để mọi nút bấm đều cảm giác clickable. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+/* Chặn user kéo ảnh ra desktop / sang tab khác. */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Pulse ring cho map dot: vòng tròn lan ra rồi mờ dần, nhằm thu hút sự chú ý đến vị trí dự án. */
+@keyframes map-dot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 162, 76, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(212, 162, 76, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 162, 76, 0);
+  }
+}
+
+.map-dot-pulse {
+  animation: map-dot-pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Pulse ring cho nút Zalo: vòng tròn xanh lan ra để thu hút sự chú ý đến CTA chat. */
+@keyframes zalo-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.55), 0 0 0 0 rgba(0, 104, 255, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(0, 104, 255, 0), 0 0 0 22px rgba(0, 104, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 104, 255, 0), 0 0 0 0 rgba(0, 104, 255, 0);
+  }
+}
+
+.zalo-pulse {
+  animation: zalo-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Pulse ring cho nút điện thoại: vòng tròn cam lan ra để gợi mời gọi điện. */
+@keyframes phone-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.55), 0 0 0 0 rgba(255, 107, 53, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(255, 107, 53, 0), 0 0 0 22px rgba(255, 107, 53, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0), 0 0 0 0 rgba(255, 107, 53, 0);
+  }
+}
+
+.phone-pulse {
+  animation: phone-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Vạch sáng quét ngang qua chữ — lặp mỗi 10s.
+   Dùng background-clip: text + linear-gradient + animation translateX trên background-position. */
+.text-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #ffffff 35%,
+    #F4C977 47%,
+    #D4A24C 50%,
+    #F4C977 53%,
+    #ffffff 65%,
+    #ffffff 100%
+  );
+  background-size: 250% 100%;
+  background-position: 150% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: text-shimmer 10s linear infinite;
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}

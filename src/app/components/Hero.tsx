@@ -1,4 +1,4 @@
-﻿import heroBanner from '@/assets/images/102.png';
+﻿import heroBanner from '@/assets/images/LogoBanner.png';
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -15,16 +15,15 @@ export function Hero() {
           <h1
             className="font-headline text-[#0A2540] mb-8"
             style={{
-              fontSize: 'clamp(2.75rem, 5.5vw, 5.5rem)',
+              fontSize: 'clamp(2rem, 4vw, 4rem)',
               fontWeight: 800,
               lineHeight: 1.02,
               letterSpacing: '-0.03em',
             }}
           >
-            Chiến lược<br />
-            Sáng tạo<br />
-            Tăng trưởng<br />
-            <span className="text-[#FF6B35]">đo được</span>
+            Luôn đồng hành<br />
+            cùng người
+            <span className="text-[#FF6B35]"> dẫn đầu</span>
           </h1>
           <p
             className="text-[#1A1A1A] mb-10 max-w-md"

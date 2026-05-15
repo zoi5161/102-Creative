@@ -1,25 +1,49 @@
 import missionImg from '@/assets/images/mission.jpg';
 import visionImg from '@/assets/images/vision.jpg';
 import competitivenessImg from '@/assets/images/competitiveness.jpg';
+import customerValueImg from '@/assets/images/CustomerValue.jpg';
 
-const cards = [
+type Card = {
+  title: string;
+  image: string;
+  content?: string;
+  bullets?: string[];
+};
+
+const cards: Card[] = [
   {
     image: missionImg,
     title: 'SỨ MỆNH',
     content:
-      'Đồng hành cùng các chủ đầu tư và sàn môi giới Bất động sản trong việc xây dựng hệ thống Marketing bền vững, tạo ra doanh thu thực tế và phát triển thương hiệu chuyên nghiệp trên thị trường.',
+      'Giúp doanh nghiệp bất động sản tạo ra giao dịch thật thông qua Marketing dữ liệu, hệ thống bán hàng và tư duy lãnh đạo đúng đắn.',
   },
   {
     image: visionImg,
-    title: 'TẦM NHÌN 2030',
+    title: 'TẦM NHÌN',
     content:
-      'Trở thành đơn vị tiên phong trong lĩnh vực Marketing Bất động sản tại Việt Nam, được công nhận bởi chất lượng dịch vụ vượt trội và cam kết tạo ra giá trị thực cho mỗi đối tác.',
+      'Đến năm 2030, 102 Creative trở thành đối tác tăng trưởng số 1 cho doanh nghiệp bất động sản tại Việt Nam, được tin tưởng vì khả năng biến chiến dịch marketing thành doanh thu thực tế.',
   },
   {
     image: competitivenessImg,
     title: 'NĂNG LỰC CẠNH TRANH',
-    content:
-      'Hiểu sâu thị trường BĐS, Marketing gắn liền với Sales theo phương pháp Mindset – Skillset – Toolset – Result. Chính trực, minh bạch và cam kết đào tạo đội ngũ chuyên nghiệp.',
+    bullets: [
+      'Hiểu sâu ngành BĐS & SME',
+      'Marketing gắn với Sales thật',
+      'Mô hình Mindset - Skillset - Toolset - Result',
+      'Triết lý chính trực & minh bạch',
+      'Khả năng đào tạo đội ngũ bán hàng',
+    ],
+  },
+  {
+    image: customerValueImg,
+    title: 'GIÁ TRỊ KHÁCH HÀNG',
+    bullets: [
+      'Kết quả đo được',
+      'Đồng hành đến cùng',
+      'Minh bạch dữ liệu',
+      'Tư duy lãnh đạo',
+      'Giá trị bền vững',
+    ],
   },
 ];
 
@@ -41,7 +65,7 @@ export function Values() {
           Hoạt động như cánh tay marketing nối dài của doanh nghiệp, 102 Creative đồng hành từ chiến lược đến triển khai. Hệ sinh thái truyền thông – marketing trọn gói của chúng tôi đảm bảo mọi đồng ngân sách đều tạo ra giá trị thật và có thể đo lường.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card) => (
             <article
               key={card.title}
@@ -56,19 +80,36 @@ export function Values() {
                 />
               </div>
 
-              <div className="flex flex-col p-8 text-center">
+              <div className="flex flex-col flex-1 p-6 text-center">
                 <h3
                   className="font-headline text-[#0A2540] mb-4 transition-colors duration-300 group-hover:text-[#D4A24C]"
-                  style={{ fontSize: '24px', fontWeight: 700 }}
+                  style={{ fontSize: '20px', fontWeight: 700 }}
                 >
                   {card.title}
                 </h3>
-                <p
-                  className="text-[#1A1A1A] leading-relaxed text-justify"
-                  style={{ fontSize: '16px', lineHeight: 1.6 }}
-                >
-                  {card.content}
-                </p>
+
+                {card.content && (
+                  <p
+                    className="text-[#1A1A1A] leading-relaxed text-justify"
+                    style={{ fontSize: '15px', lineHeight: 1.6 }}
+                  >
+                    {card.content}
+                  </p>
+                )}
+
+                {card.bullets && (
+                  <ul className="space-y-2 text-left">
+                    {card.bullets.map((b) => (
+                      <li
+                        key={b}
+                        className="text-[#1A1A1A]"
+                        style={{ fontSize: '15px', lineHeight: 1.55 }}
+                      >
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </article>
           ))}

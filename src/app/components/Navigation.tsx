@@ -8,6 +8,7 @@ const navItems = [
   { id: 'gioi-thieu', label: 'Giới thiệu' },
   { id: 'giai-phap', label: 'Giải pháp' },
   { id: 'du-an', label: 'Dự án' },
+  { id: 'tuyen-dung', label: 'Tuyển dụng' },
   { id: 'lien-he', label: 'Liên hệ' },
 ];
 

@@ -58,21 +58,25 @@ export function Stats() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-headline mb-6" style={{ color: LOGO_TERRACOTTA, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 800 }}>
-              Chúng tôi là ai
+              102 Creative
             </h2>
             <p className="text-[#1A1A1A] leading-relaxed" style={{ fontSize: '17px', lineHeight: 1.6 }}>
-              <strong style={{ color: LOGO_NAVY }}>102 CREATIVE</strong> là đơn vị chuyên cung cấp giải pháp{' '}
-              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>Marketing tổng thể</span> cho các chủ đầu tư
-              và sàn môi giới <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Bất động sản</span> tại Việt Nam. Với phương châm{' '}
-              <span className="font-semibold italic" style={{ color: LOGO_BURGUNDY }}>"Làm thật – Nói thật – Chịu trách nhiệm thật"</span>,
-              chúng tôi cam kết đồng hành cùng đối tác từ chiến lược đến việc tạo ra{' '}
+              <strong style={{ color: LOGO_NAVY }}>102 Creative</strong> là đơn vị{' '}
+              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>Marketing chuyên sâu</span> trong lĩnh vực{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>bất động sản</span>, tập trung vào giải pháp tạo{' '}
+              <span className="font-semibold" style={{ color: LOGO_TEAL }}>Lead chất lượng</span> và tối ưu chuyển đổi giao dịch.
+            </p>
+            <p className="text-[#1A1A1A] leading-relaxed mt-4" style={{ fontSize: '17px', lineHeight: 1.6 }}>
+              Chúng tôi không chỉ triển khai quảng cáo, mà{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>đồng hành cùng doanh nghiệp</span> từ chiến lược đến{' '}
               <span className="font-semibold" style={{ color: LOGO_TEAL }}>doanh thu thực tế</span>.
             </p>
             <p className="text-[#1A1A1A] leading-relaxed mt-4" style={{ fontSize: '17px', lineHeight: 1.6 }}>
-              Đội ngũ <strong style={{ color: LOGO_NAVY }}>102 CREATIVE</strong> sở hữu{' '}
-              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>hơn 10 năm kinh nghiệm</span> trong lĩnh vực
-              Marketing và <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Bất động sản</span>, hiểu sâu về
-              hành vi khách hàng, quy trình bán hàng và các công cụ số hóa hiện đại.
+              Với <span className="font-semibold" style={{ color: LOGO_TEAL }}>tư duy dữ liệu</span> và{' '}
+              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>thực chiến thị trường</span>,{' '}
+              <strong style={{ color: LOGO_NAVY }}>102 Creative</strong> lựa chọn trở thành{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>đối tác tăng trưởng bền vững</span> của những{' '}
+              <span className="font-semibold italic" style={{ color: LOGO_BURGUNDY }}>người dẫn đầu</span>.
             </p>
           </div>
 

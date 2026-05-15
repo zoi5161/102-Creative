@@ -31,17 +31,17 @@ export function Founder() {
               </p>
               <div className="w-16 h-1 bg-[#D4A24C]"></div>
               <p className="text-[#1A1A1A] leading-relaxed" style={{ fontSize: '17px', lineHeight: 1.6 }}>
-                Với <span className="font-semibold" style={{ color: '#D8552B' }}>hơn 10 năm kinh nghiệm</span> trong lĩnh vực
-                Marketing và <span className="font-semibold" style={{ color: '#D4A24C' }}>Bất động sản</span>,
-                anh <strong style={{ color: '#0A2540' }}>Hoàng Phi Long</strong> đã đồng hành cùng{' '}
-                <span className="font-semibold" style={{ color: '#3FA9B5' }}>hàng chục chủ đầu tư và sàn môi giới lớn</span> tại Việt Nam.
+                Ông <strong style={{ color: '#0A2540' }}>Hoàng Phi Long</strong> là{' '}
+                <span className="font-semibold" style={{ color: '#D8552B' }}>nhà sáng lập và điều hành 102 Creative</span>, đồng thời là người có{' '}
+                <span className="font-semibold" style={{ color: '#D4A24C' }}>hơn 10 năm kinh nghiệm thực chiến</span> trong lĩnh vực{' '}
+                <span className="font-semibold" style={{ color: '#3FA9B5' }}>bất động sản và marketing</span>.
               </p>
               <p className="text-[#1A1A1A] leading-relaxed" style={{ fontSize: '17px', lineHeight: 1.6 }}>
-                Triết lý kinh doanh của anh là{' '}
-                <span className="font-semibold" style={{ color: '#D8552B' }}>sự minh bạch tuyệt đối</span> trong từng con số,
-                từng chiến dịch, và luôn đặt{' '}
-                <span className="font-semibold" style={{ color: '#D4A24C' }}>lợi ích của khách hàng</span> lên hàng đầu.{' '}
-                <span className="font-semibold italic" style={{ color: '#7E2D3B' }}>"Marketing không chỉ là quảng cáo, mà là việc tạo ra giá trị thực cho doanh nghiệp."</span>
+                Dưới vai trò người đứng đầu, ông định hướng <strong style={{ color: '#0A2540' }}>102 Creative</strong> trở thành đơn vị{' '}
+                <span className="font-semibold" style={{ color: '#D8552B' }}>không chỉ cung cấp giải pháp marketing</span>, mà còn đồng hành cùng doanh nghiệp trong việc{' '}
+                <span className="font-semibold" style={{ color: '#D4A24C' }}>nâng cao tư duy quản trị</span>,{' '}
+                <span className="font-semibold" style={{ color: '#3FA9B5' }}>xây dựng hệ thống bán hàng</span> và{' '}
+                <span className="font-semibold italic" style={{ color: '#7E2D3B' }}>phát triển đội ngũ bền vững</span>.
               </p>
             </div>
           </div>

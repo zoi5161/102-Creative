@@ -10,20 +10,24 @@ const cards: Card[] = [
     icon: Target,
     items: [
       {
-        title: 'Nghiên cứu thị trường & đối thủ cạnh tranh',
-        desc: 'Phân tích quy mô, xu hướng và chiến lược của các đối thủ trong cùng phân khúc.',
+        title: 'Nghiên cứu thị trường',
+        desc: 'Phân tích quy mô, xu hướng giá và mức độ cạnh tranh của phân khúc bạn đang khai thác.',
       },
       {
-        title: 'Phân tích SWOT dự án',
-        desc: 'Định vị điểm mạnh, điểm yếu, cơ hội và rủi ro để xác định lợi thế truyền thông.',
+        title: 'Phân tích SWOT dự án triển khai',
+        desc: 'Soi rõ điểm mạnh, yếu, cơ hội và rủi ro của dự án lẫn đối thủ trong bối cảnh thị trường thực tế.',
       },
       {
-        title: 'Xác định khách hàng mục tiêu',
-        desc: 'Vẽ chân dung khách hàng - độ tuổi, thu nhập, nhu cầu - để target chính xác.',
+        title: 'Nghiên cứu Nhóm khách hàng mục tiêu',
+        desc: 'Xác định insight, hành vi và tiêu chí lựa chọn của từng phân khúc khách hàng tiềm năng.',
       },
       {
-        title: 'Xây dựng kênh quảng cáo hiệu quả',
-        desc: 'Set up Facebook, Google, Zalo Ads với cấu hình tối ưu cho từng phân khúc.',
+        title: 'Đề xuất kênh quảng cáo phù hợp',
+        desc: 'Chọn lọc Facebook, Google, Zalo, TikTok hay PR theo đúng phễu và ngân sách dự án.',
+      },
+      {
+        title: 'Triển khai và tối ưu hóa',
+        desc: 'Set up, vận hành chiến dịch và A/B test liên tục để giảm CPL theo từng tuần.',
       },
     ],
   },
@@ -32,20 +36,16 @@ const cards: Card[] = [
     icon: TrendingUp,
     items: [
       {
-        title: 'Quy trình xử lý lead chuẩn hóa',
-        desc: 'SOP rõ ràng từ tiếp nhận đến chốt - không để lead nào rơi rớt.',
+        title: 'Chuẩn hóa quy trình xử lý lead',
+        desc: 'SOP rõ ràng từ tiếp nhận, phân loại đến chuyển sale - không để lead nào rơi rớt.',
       },
       {
-        title: 'Xây dựng script bán hàng hiệu quả',
-        desc: 'Câu hỏi mở, framework phản biện và kịch bản chốt đã được kiểm chứng.',
+        title: 'Cung cấp Script bán hàng',
+        desc: 'Câu hỏi mở, framework phản biện và kịch bản chốt deal đã được kiểm chứng thực chiến.',
       },
       {
-        title: 'Kịch bản bám đuổi đa kênh',
-        desc: 'Email, SMS, Zalo, call - touchpoint phối hợp để duy trì sự quan tâm.',
-      },
-      {
-        title: 'Đào tạo kỹ năng chốt sales',
-        desc: 'Workshop thực chiến và role-play để đội sales nâng tỷ lệ chốt deal.',
+        title: 'Xây kịch bản bám đuổi đa kênh',
+        desc: 'Email, SMS, Zalo, call - touchpoint phối hợp để duy trì quan tâm cho đến khi khách chốt.',
       },
     ],
   },

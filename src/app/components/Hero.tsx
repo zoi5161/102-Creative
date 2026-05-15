@@ -9,7 +9,13 @@ export function Hero() {
   };
 
   return (
-    <section className="relative lg:min-h-screen w-full bg-[#F5F5F0] overflow-hidden flex items-center pt-28 pb-16">
+    <section
+      className="relative lg:min-h-screen w-full overflow-hidden flex items-center pt-28 pb-16"
+      style={{
+        background:
+          'radial-gradient(ellipse 800px 600px at 80% 55%, rgba(212,162,76,0.13) 0%, transparent 60%), radial-gradient(ellipse 600px 400px at 5% 95%, rgba(216,85,43,0.07) 0%, transparent 55%), #F5F5F0',
+      }}
+    >
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div className="lg:max-w-[48%]">
           <h1
@@ -22,8 +28,8 @@ export function Hero() {
             }}
           >
             Luôn đồng hành<br />
-            cùng người
-            <span className="text-[#FF6B35]"> dẫn đầu</span>
+            cùng
+            <span className="text-[#FF6B35]"> người dẫn đầu</span>
           </h1>
           <p
             className="text-[#1A1A1A] mb-10 max-w-md"

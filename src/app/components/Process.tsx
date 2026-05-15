@@ -1,4 +1,5 @@
 import { Handshake, Lightbulb, Rocket, BarChart3 } from 'lucide-react';
+import { ParticleBackground } from './ParticleBackground';
 
 type Step = {
   number: string;
@@ -71,18 +72,31 @@ const steps: Step[] = [
 
 export function Process() {
   return (
-    <section id="quy-trinh" className="py-24 bg-[#F5F5F0] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="quy-trinh"
+      className="relative py-24 overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #0A2540 0%, #0D4070 40%, #1060A0 70%, #1976D2 100%)' }}
+    >
+      <ParticleBackground />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.07) 1.5px, transparent 1.5px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2
-          className="font-headline text-center mb-4 text-[#0A2540]"
+          className="font-headline text-center mb-4 text-white"
           style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}
         >
-          <span className="text-[#3FA9B5]">QUY TRÌNH</span> LÀM VIỆC
+          <span className="text-[#D4A24C]">QUY TRÌNH</span> LÀM VIỆC
         </h2>
         <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-8"></div>
         <p
-          className="text-center text-[#1A1A1A] max-w-3xl mx-auto mb-20 leading-relaxed"
-          style={{ fontSize: '17px', lineHeight: 1.6 }}
+          className="text-center max-w-3xl mx-auto mb-20 leading-relaxed"
+          style={{ color: 'rgba(255,255,255,0.75)', fontSize: '17px', lineHeight: 1.6 }}
         >
           Từ buổi gặp đầu tiên đến doanh thu thực tế - 4 giai đoạn minh bạch, đo được, không bao giờ giấu giếm dữ liệu.
         </p>
@@ -151,3 +165,4 @@ export function Process() {
     </section>
   );
 }
+

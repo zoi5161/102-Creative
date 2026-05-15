@@ -81,7 +81,11 @@ export function Solutions() {
   };
 
   return (
-    <section id="giai-phap" className="py-24 bg-[#F5F5F0]">
+    <section
+      id="giai-phap"
+      className="py-24"
+      style={{ background: 'linear-gradient(45deg, #EFF6F5 0%, #F5F5F0 50%, #FBF8F0 100%)' }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-headline text-center mb-4 text-[#0A2540]" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
           <span className="text-[#3FA9B5]">GIẢI PHÁP</span> CHO MÔI GIỚI BẤT ĐỘNG SẢN

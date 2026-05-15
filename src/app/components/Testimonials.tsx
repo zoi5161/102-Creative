@@ -99,7 +99,7 @@ export function Testimonials() {
   const safeStart = Math.min(start, totalDots - 1);
 
   return (
-    <section id="khach-hang-noi-bat" className="py-24 bg-[#F5F5F0]">
+    <section id="khach-hang-noi-bat" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2
           className="font-headline text-center mb-4 text-[#0A2540]"
@@ -126,7 +126,7 @@ export function Testimonials() {
             {testimonials.map((t) => (
               <article
                 key={t.name}
-                className="flex-shrink-0 group bg-white p-8 rounded-md border-l-[3px] shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[360px]"
+                className="flex-shrink-0 group bg-[#F5F5F0] p-8 rounded-md border-l-[3px] shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[360px]"
                 style={{
                   width: `calc((100% - ${(visibleCount - 1) * 32}px) / ${visibleCount})`,
                   borderColor: t.color,

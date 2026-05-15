@@ -63,7 +63,7 @@ export function Partners() {
   }
 
   return (
-    <section className="py-24">
+    <section className="py-24 bg-[#F5F5F0]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-headline text-center mb-4 text-[#0A2540]" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
           <span className="text-[#D8552B]">Khách hàng nổi bật</span> của 102 Creative
@@ -111,7 +111,7 @@ function LogoCard({ partner }: { partner: Partner }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Xem website ${partner.name}`}
-      className="relative bg-[#F5F5F0] p-4 sm:p-6 lg:p-8 rounded-sm flex items-center justify-center h-28 sm:h-36 lg:h-48 after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[3px] after:bg-[#D4A24C] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-100"
+      className="relative bg-white p-4 sm:p-6 lg:p-8 rounded-sm flex items-center justify-center h-28 sm:h-36 lg:h-48 after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[3px] after:bg-[#D4A24C] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-100"
     >
       <img
         src={partner.logo}

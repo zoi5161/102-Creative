@@ -49,7 +49,10 @@ const cards: Card[] = [
 
 export function Values() {
   return (
-    <section className="py-24 bg-[#F5F5F0]">
+    <section
+      className="py-24"
+      style={{ background: 'linear-gradient(315deg, #FDFCF8 0%, #F8F4EC 45%, #F2EDE2 100%)' }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <h2
           className="font-headline text-center mb-4 text-[#1A1A1A]"

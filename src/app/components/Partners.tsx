@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
-import datPhuongNam from '@/assets/images/partners/DatPhuongNam.png';
+import datPhuongNam from '@/assets/images/partners/DatPhuongNam.jpg';
 import phuKhangHolding from '@/assets/images/partners/PhuKhangHolding.png';
 import longHoangInvestment from '@/assets/images/partners/LongHoangInvestment.png';
 import gptLand from '@/assets/images/partners/GPTLand.png';
@@ -14,7 +14,7 @@ type Partner = { name: string; logo: string; url: string };
 type Layout = { columnsVisible: number; rowsPerColumn: number };
 
 const partners: Partner[] = [
-  { name: 'Đất Phương Nam', logo: datPhuongNam, url: 'https://dpnr.vn/' },
+  { name: 'Đất Phương Nam', logo: datPhuongNam, url: 'https://bdsdatphuongnam.com.vn/' },
   { name: 'Phú Khang Holding', logo: phuKhangHolding, url: 'https://www.facebook.com/p/Ph%C3%BA-Khang-Holdings-61579000707227/' },
   { name: 'Long Hoàng Investment', logo: longHoangInvestment, url: 'https://longhoanginvestment.vn/' },
   { name: 'GPT Land', logo: gptLand, url: 'https://www.gptland.vn/' },

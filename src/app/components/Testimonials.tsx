@@ -48,11 +48,20 @@ const testimonials: Testimonial[] = [
   {
     quote:
       'Dự án quy mô lớn nhưng 102 Creative xử lý từ chiến lược đến deploy chỉ trong 3 tuần. Chuyên nghiệp, đúng cam kết và quan trọng nhất - leads ra đều, chất lượng.',
-    name: 'Ông Trần Văn Chinh',
+    name: 'Bà Huỳnh Thị Vân Anh',
     title: 'CEO',
     company: 'Việt Á Real',
     color: '#7E2D3B',
-    initials: 'PH',
+    initials: 'VA',
+  },
+  {
+    quote:
+      '102 Creative không chỉ giúp chúng tôi tăng lượng lead mà còn đồng hành tư vấn chiến lược từng giai đoạn. Đội ngũ chuyên nghiệp, phản hồi nhanh và luôn đặt kết quả thật lên đầu.',
+    name: 'Ông Lê Nhật Khánh',
+    title: 'CEO',
+    company: 'Phú Khang Holdings',
+    color: '#3FA9B5',
+    initials: 'NK',
   },
   {
     quote:

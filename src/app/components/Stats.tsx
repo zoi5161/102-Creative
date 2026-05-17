@@ -66,35 +66,31 @@ export function Stats() {
             </h2>
             <p className="leading-relaxed" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
               <strong style={{ color: 'white' }}>102 Creative</strong> là đơn vị{' '}
-              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>Marketing chuyên sâu</span> trong lĩnh vực{' '}
-              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>bất động sản</span>, tập trung vào giải pháp tạo{' '}
-              <span className="font-semibold" style={{ color: LOGO_TEAL }}>Lead chất lượng</span> và tối ưu chuyển đổi giao dịch.
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Marketing chuyên sâu</span> trong lĩnh vực bất động sản, tập trung vào giải pháp tạo{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Lead chất lượng</span> và tối ưu chuyển đổi giao dịch.
             </p>
             <p className="leading-relaxed mt-4" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-              Chúng tôi không chỉ triển khai quảng cáo, mà{' '}
-              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>đồng hành cùng doanh nghiệp</span> từ chiến lược đến{' '}
-              <span className="font-semibold" style={{ color: LOGO_TEAL }}>doanh thu thực tế</span>.
+              Chúng tôi không chỉ triển khai quảng cáo, mà đồng hành cùng doanh nghiệp từ chiến lược đến{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>doanh thu thực tế</span>.
             </p>
             <p className="leading-relaxed mt-4" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-              Với <span className="font-semibold" style={{ color: LOGO_TEAL }}>tư duy dữ liệu</span> và{' '}
-              <span className="font-semibold" style={{ color: LOGO_TERRACOTTA }}>thực chiến thị trường</span>,{' '}
-              <strong style={{ color: 'white' }}>102 Creative</strong> lựa chọn trở thành{' '}
-              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>đối tác tăng trưởng bền vững</span> của những{' '}
-              <span className="font-semibold italic" style={{ color: LOGO_BURGUNDY }}>người dẫn đầu</span>.
+              Với tư duy dữ liệu và thực chiến thị trường,{' '}
+              <strong style={{ color: 'white' }}>102 Creative</strong> lựa chọn trở thành đối tác tăng trưởng bền vững của những{' '}
+              <span className="font-semibold italic" style={{ color: LOGO_MUSTARD }}>người dẫn đầu</span>.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
             <div className="p-6 rounded-sm border border-white/15" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}>
-              <CountUp end={16} suffix="+" color={LOGO_TERRACOTTA} />
-              <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Dự án năm 2025</p>
+              <CountUp end={40} suffix="+" color={LOGO_TERRACOTTA} />
+              <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Dự án năm 2026</p>
             </div>
             <div className="p-6 rounded-sm border border-white/15" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}>
               <CountUp end={10} suffix="+" color={LOGO_TEAL} />
               <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Năm kinh nghiệm</p>
             </div>
             <div className="p-6 rounded-sm border border-white/15" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}>
-              <CountUp end={12} suffix="+" color={LOGO_MUSTARD} />
+              <CountUp end={30} suffix="+" color={LOGO_MUSTARD} />
               <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Đối tác chiến lược</p>
             </div>
             <div className="p-6 rounded-sm border border-white/15" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}>

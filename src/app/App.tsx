@@ -14,6 +14,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { FloatingButtons } from './components/FloatingButtons';
 import { RecruitmentModal } from './components/RecruitmentModal';
+import { LeadPopup } from './components/LeadPopup';
 
 export default function App() {
   const [recruitmentOpen, setRecruitmentOpen] = useState(false);
@@ -22,6 +23,7 @@ export default function App() {
     <div className="w-full">
       <Navigation onRecruitmentClick={() => setRecruitmentOpen(true)} />
       <RecruitmentModal open={recruitmentOpen} onClose={() => setRecruitmentOpen(false)} />
+      <LeadPopup />
       <Hero />
       <Stats />
       <Values />

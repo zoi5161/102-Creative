@@ -88,7 +88,7 @@ export function Solutions() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-headline text-center mb-4 text-[#0A2540]" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
-          <span className="text-[#3FA9B5]">GIẢI PHÁP</span> CHO MÔI GIỚI BẤT ĐỘNG SẢN
+          <span className="text-[#3FA9B5]">GIẢI PHÁP</span> CHO SÀN GIAO DỊCH BẤT ĐỘNG SẢN
         </h2>
         <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-16"></div>
 

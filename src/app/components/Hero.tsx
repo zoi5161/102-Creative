@@ -48,7 +48,7 @@ export function Hero() {
               className="px-8 py-4 bg-[#0A2540] text-white rounded-sm shadow-md hover:bg-[#13304A] hover:shadow-lg transition-all duration-200"
               style={{ fontWeight: 600 }}
             >
-              Tư vấn miễn phí
+              Kết nối chuyên gia
             </button>
             <button
               onClick={() => scrollToSection('du-an')}

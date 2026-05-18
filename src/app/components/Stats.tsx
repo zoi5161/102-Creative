@@ -92,7 +92,7 @@ export function Stats() {
             </div>
             <div className="p-6 rounded-sm border border-white/15" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}>
               <CountUp end={100} suffix="%" color={LOGO_BURGUNDY} />
-              <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Data-driven</p>
+              <p className="mt-2" style={{ fontSize: '15px', color: 'rgba(255,255,255,0.55)' }}>Dữ liệu minh bạch</p>
             </div>
           </div>
         </div>

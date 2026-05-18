@@ -21,7 +21,7 @@ import theGlobalCity from '@/assets/images/projects/TheGlobalCity.jpg';
 import eliteLife from '@/assets/images/projects/EliteLife.jpg';
 import theWinCity from '@/assets/images/projects/TheWinCity.jpg';
 import destinoCentro from '@/assets/images/projects/DestinoCentro.jpg';
-import khaiHoanPrime from '@/assets/images/projects/KhaiHoanPrime.jpeg';
+import khaiHoanPrime from '@/assets/images/projects/KhaiHoanPrime.png';
 import khuDanCuBinhChanh from '@/assets/images/projects/KhuDanCuBinhChanh.jpg';
 import diamondSky from '@/assets/images/projects/DiamondSky.jpeg';
 import khaiHoanImperial from '@/assets/images/projects/KhaiHoanImperial.jpg';

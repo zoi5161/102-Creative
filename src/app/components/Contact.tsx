@@ -1,126 +1,19 @@
-﻿import { useState } from 'react';
 import { Phone, Mail, Globe } from 'lucide-react';
-import { toast } from 'sonner';
 import { ParticleBackground } from './ParticleBackground';
-
-const LEADS_ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbwZhjGLuSSkpIfLmZHACCNOvgrJDm0asy8TAuo34XeoWBFB4G2HgugdKmJxuiwk-ao0/exec';
+import contactImage from '@/assets/images/contact.jpg';
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    project: '',
-    message: '',
-  });
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (submitting) return;
-    setSubmitting(true);
-    try {
-      await fetch(LEADS_ENDPOINT, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify({
-          ...formData,
-          userAgent: navigator.userAgent,
-        }),
-      });
-      toast.success('Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.');
-      setFormData({ name: '', phone: '', project: '', message: '' });
-    } catch {
-      toast.error('Gửi không thành công, vui lòng gọi 0888 40 32 32.');
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   return (
-    <section id="lien-he" className="relative min-h-screen flex items-center py-24 bg-[#13304A] overflow-hidden">
+    <section id="lien-he" className="relative flex items-center py-20 bg-[#13304A] overflow-hidden">
       <ParticleBackground />
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <h2 className="font-headline text-center mb-4 text-white" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
-          Liên hệ <span className="text-[#D4A24C]">tư vấn miễn phí</span> ngay bây giờ
+          Thông tin liên hệ
         </h2>
         <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-16"></div>
 
-        <div className="grid md:grid-cols-2 gap-12 md:gap-30">
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-white mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
-                  Họ và tên *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-white border border-white rounded-sm text-[#1A1A1A] placeholder-[#9CA3AF] focus:outline-none focus:border-[#D4A24C] transition-colors"
-                  placeholder="Nguyễn Văn A"
-                />
-              </div>
-
-              <div>
-                <label className="block text-white mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
-                  Số điện thoại *
-                </label>
-                <input
-                  type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-white border border-white rounded-sm text-[#1A1A1A] placeholder-[#9CA3AF] focus:outline-none focus:border-[#D4A24C] transition-colors"
-                  placeholder="0888 40 32 32"
-                />
-              </div>
-
-              <div>
-                <label className="block text-white mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
-                  Tên dự án
-                </label>
-                <input
-                  type="text"
-                  value={formData.project}
-                  onChange={(e) => setFormData({ ...formData, project: e.target.value })}
-                  className="w-full px-4 py-3 bg-white border border-white rounded-sm text-[#1A1A1A] placeholder-[#9CA3AF] focus:outline-none focus:border-[#D4A24C] transition-colors"
-                  placeholder="VD: Blanca City, Thành Đô II..."
-                />
-              </div>
-
-              <div>
-                <label className="block text-white mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
-                  Mô tả ngắn
-                </label>
-                <textarea
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
-                  className="w-full px-4 py-3 bg-white border border-white rounded-sm text-[#1A1A1A] placeholder-[#9CA3AF] focus:outline-none focus:border-[#D4A24C] transition-colors resize-none"
-                  placeholder="Cho chúng tôi biết về nhu cầu của bạn..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={submitting}
-                className="w-full px-8 py-4 bg-[#FF6B35] text-white rounded-sm hover:bg-[#FF8A5C] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
-                style={{ fontWeight: 600 }}
-              >
-                {submitting ? 'Đang gửi…' : 'Gửi yêu cầu'}
-              </button>
-            </form>
-          </div>
-
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div>
-              <h3 className="font-headline text-white mb-8" style={{ fontSize: '28px', fontWeight: 700 }}>
-                Thông tin liên hệ
-              </h3>
-            </div>
-
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#D4A24C] rounded-sm flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-white" />
@@ -163,6 +56,14 @@ export function Contact() {
                 sẽ được bảo mật tuyệt đối theo chính sách riêng tư của 102 CREATIVE.
               </p>
             </div>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <img
+              src={contactImage}
+              alt="102 Creative - Liên hệ tư vấn"
+              className="w-full h-auto rounded-2xl object-cover shadow-2xl"
+            />
           </div>
         </div>
       </div>

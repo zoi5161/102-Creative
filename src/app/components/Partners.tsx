@@ -13,7 +13,7 @@ import thienPhucGroup from '@/assets/images/partners/ThienPhucGroup.png';
 import nextLand from '@/assets/images/partners/NextLand.webp';
 import minhLongInvestment from '@/assets/images/partners/MinhLongInvestment.png';
 
-type Partner = { name: string; logo: string; url: string };
+type Partner = { name: string; logo: string; url: string; scale?: number };
 type Layout = { columnsVisible: number; rowsPerColumn: number };
 
 const partners: Partner[] = [
@@ -27,7 +27,7 @@ const partners: Partner[] = [
   { name: 'Trendy Realty', logo: trendRealty, url: 'https://www.trendrealty.vn/' },
   { name: 'Thien Phuc Group', logo: thienPhucGroup, url: 'https://thienphucgroup.com/' },
   { name: 'NextLand VN', logo: nextLand, url: 'https://nextlandvn.com/' },
-  { name: 'Minh Long Investment', logo: minhLongInvestment, url: 'https://minhlonginvestment.com/' },
+  { name: 'Minh Long Investment', logo: minhLongInvestment, url: 'https://minhlonginvestment.com/', scale: 1.6 },
 ];
 
 const ROTATE_INTERVAL_MS = 4000;
@@ -124,6 +124,7 @@ function LogoCard({ partner }: { partner: Partner }) {
         alt={partner.name}
         loading="lazy"
         className="max-h-full max-w-full w-auto h-auto object-contain"
+        style={partner.scale ? { transform: `scale(${partner.scale})` } : undefined}
       />
     </a>
   );

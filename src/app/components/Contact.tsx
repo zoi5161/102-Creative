@@ -4,16 +4,18 @@ import contactImage from '@/assets/images/contact.jpg';
 
 export function Contact() {
   return (
-    <section id="lien-he" className="relative flex items-center py-20 bg-[#13304A] overflow-hidden">
+    <section id="lien-he" className="relative flex items-stretch bg-[#13304A] overflow-hidden">
       <ParticleBackground />
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-        <h2 className="font-headline text-center mb-4 text-white" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
-          Thông tin liên hệ
-        </h2>
-        <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-16"></div>
+      <div className="relative z-10 w-full">
+        <div className="grid md:grid-cols-2 items-stretch">
+          <div className="space-y-8 py-20 px-6 md:px-12 max-w-2xl md:ml-auto">
+            <div>
+              <h2 className="font-headline text-white mb-4" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
+                Thông tin liên hệ
+              </h2>
+              <div className="w-24 h-1 bg-[#D4A24C]"></div>
+            </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#D4A24C] rounded-sm flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-white" />
@@ -50,7 +52,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-white/20">
+            <div className="pt-6 border-t border-white/20">
               <p className="text-white/80 leading-relaxed" style={{ fontSize: '16px', lineHeight: 1.6 }}>
                 Chúng tôi cam kết phản hồi trong vòng 24 giờ làm việc. Mọi thông tin của bạn
                 sẽ được bảo mật tuyệt đối theo chính sách riêng tư của 102 CREATIVE.
@@ -58,11 +60,11 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center justify-center">
+          <div className="hidden md:block absolute top-0 right-0 w-1/2 h-full">
             <img
               src={contactImage}
               alt="102 Creative - Liên hệ tư vấn"
-              className="w-full h-auto rounded-2xl object-cover shadow-2xl"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

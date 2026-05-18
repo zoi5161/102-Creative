@@ -5,7 +5,7 @@ import { ParticleBackground } from './ParticleBackground';
 export function Founder() {
   return (
     <section
-      className="relative py-20 overflow-hidden bg-[#13304A]"
+      className="relative py-20 md:py-0 overflow-hidden bg-[#13304A]"
     >
       <ParticleBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-6">

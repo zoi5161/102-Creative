@@ -58,7 +58,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="hidden md:flex items-center justify-center">
             <img
               src={contactImage}
               alt="102 Creative - Liên hệ tư vấn"

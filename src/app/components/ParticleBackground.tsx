@@ -9,6 +9,9 @@ export function ParticleBackground({ count = 70 }: { count?: number }) {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
+    const isMobile = window.innerWidth < 768;
+    const PARTICLE_COUNT = isMobile ? Math.ceil(count * 0.35) : count;
+
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     let width = 0;
     let height = 0;
@@ -24,13 +27,15 @@ export function ParticleBackground({ count = 70 }: { count?: number }) {
     };
     resize();
 
+    const ro = new ResizeObserver(resize);
+    ro.observe(canvas);
+
     type Particle = {
       x: number; y: number;
       tx: number; ty: number;
       vx: number; vy: number;
       r: number; pushCount: number;
     };
-    const PARTICLE_COUNT = count;
     const MAX_DIST = 140;
     const MOUSE_RADIUS = 180;
     const MOUSE_BOOST = 7;
@@ -147,6 +152,7 @@ export function ParticleBackground({ count = 70 }: { count?: number }) {
     window.addEventListener('click', onClick);
     return () => {
       cancelAnimationFrame(raf);
+      ro.disconnect();
       window.removeEventListener('resize', resize);
       window.removeEventListener('mousemove', onMove);
       window.removeEventListener('mouseleave', onLeave);

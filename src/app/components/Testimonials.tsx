@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
   {
     quote:
       'Phối hợp với 102 Creative giúp chúng tôi rút ngắn gần 40% thời gian go-to-market của dự án mới - từ research thị trường đến chạy quảng cáo, mọi thứ đều data-driven và đo lường rõ ràng.',
-    name: 'Ông Trần Hoàng Dũng',
+    name: 'Ông Nguyễn Bảo Trung',
     title: 'CEO',
     company: 'Đất Phương Nam',
     color: '#D8552B',
@@ -30,8 +30,8 @@ const testimonials: Testimonial[] = [
   {
     quote:
       'Đội 102 không chỉ chạy quảng cáo, họ training cả đội sales của tôi về kịch bản bám đuổi và chốt deal. Đó mới là điểm khác biệt thật sự với một agency.',
-    name: 'Bà Nguyễn Thị Nhàn',
-    title: 'CEO',
+    name: 'Ông Mai Tuấn Kiệt',
+    title: 'Giám đốc chi nhánh',
     company: 'Khải Minh Land',
     color: '#3FA9B5',
     initials: 'LT',
@@ -57,8 +57,8 @@ const testimonials: Testimonial[] = [
   {
     quote:
       'Tôi từng làm việc với nhiều agency, nhưng 102 Creative là đơn vị duy nhất đặt KPI doanh thu lên trước, thay vì chỉ đẹp số leads ảo trên dashboard.',
-    name: 'Ông Nguyễn Hoàng Việt Chương',
-    title: 'Giám đốc dự án',
+    name: 'Ông Hoàng Trung Hiếu',
+    title: 'Giám đốc Marketing',
     company: 'GPT Land',
     color: '#0A2540',
     initials: 'ĐL',
@@ -66,7 +66,7 @@ const testimonials: Testimonial[] = [
   {
     quote:
       'Marketing trong BĐS cực kỳ cạnh tranh - 102 Creative giúp chúng tôi nổi bật bằng concept sáng tạo và targeting chính xác đến từng phân khúc khách hàng.',
-    name: 'Ông Nguyễn Đức Hiếu',
+    name: 'Ông Nguyễn Quốc Hiếu',
     title: 'CEO',
     company: 'Trend Realty',
     color: '#D8552B',

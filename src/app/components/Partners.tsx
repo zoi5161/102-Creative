@@ -9,24 +9,30 @@ import vietAReal from '@/assets/images/partners/VietAReal.png';
 import khaiMinhLand from '@/assets/images/partners/KhaiMinhLand.png';
 import luongGiaLand from '@/assets/images/partners/LuongGiaLand.png';
 import trendRealty from '@/assets/images/partners/TrendRealty.png';
+import thienPhucGroup from '@/assets/images/partners/ThienPhucGroup.png';
+import nextLand from '@/assets/images/partners/NextLand.webp';
+import minhLongInvestment from '@/assets/images/partners/MinhLongInvestment.png';
 
 type Partner = { name: string; logo: string; url: string };
 type Layout = { columnsVisible: number; rowsPerColumn: number };
 
 const partners: Partner[] = [
-  { name: 'Đất Phương Nam', logo: datPhuongNam, url: 'https://bdsdatphuongnam.com.vn/' },
-  { name: 'Phú Khang Holding', logo: phuKhangHolding, url: 'https://www.facebook.com/p/Ph%C3%BA-Khang-Holdings-61579000707227/' },
-  { name: 'Long Hoàng Investment', logo: longHoangInvestment, url: 'https://longhoanginvestment.vn/' },
+  { name: 'Dat Phuong Nam', logo: datPhuongNam, url: 'https://bdsdatphuongnam.com.vn/' },
+  { name: 'Phu Khang Holding', logo: phuKhangHolding, url: 'https://www.facebook.com/p/Ph%C3%BA-Khang-Holdings-61579000707227/' },
+  { name: 'Long Hoang Investment', logo: longHoangInvestment, url: 'https://longhoanginvestment.vn/' },
   { name: 'GPT Land', logo: gptLand, url: 'https://www.gptland.vn/' },
-  { name: 'Việt Á Real', logo: vietAReal, url: 'https://vietareal.vn/' },
-  { name: 'Khải Minh Land', logo: khaiMinhLand, url: 'https://khaiminhland.vn/' },
-  { name: 'Lương Gia Land', logo: luongGiaLand, url: 'https://luonggialand.com/' },
+  { name: 'Viet A Real', logo: vietAReal, url: 'https://vietareal.vn/' },
+  { name: 'Khai Minh Land', logo: khaiMinhLand, url: 'https://khaiminhland.vn/' },
+  { name: 'Luong Gia Land', logo: luongGiaLand, url: 'https://luonggialand.com/' },
   { name: 'Trendy Realty', logo: trendRealty, url: 'https://www.trendrealty.vn/' },
+  { name: 'Thien Phuc Group', logo: thienPhucGroup, url: 'https://thienphucgroup.com/' },
+  { name: 'NextLand VN', logo: nextLand, url: 'https://nextlandvn.com/' },
+  { name: 'Minh Long Investment', logo: minhLongInvestment, url: 'https://minhlonginvestment.com/' },
 ];
 
 const ROTATE_INTERVAL_MS = 4000;
-const DESKTOP_LAYOUT: Layout = { columnsVisible: 5, rowsPerColumn: 1 }; // ≥ lg: 5-in-a-row
-const MOBILE_LAYOUT: Layout = { columnsVisible: 2, rowsPerColumn: 2 };  // < lg: 2×2
+const DESKTOP_LAYOUT: Layout = { columnsVisible: 5, rowsPerColumn: 1 };
+const MOBILE_LAYOUT: Layout = { columnsVisible: 2, rowsPerColumn: 2 };
 
 function getLayout(width: number): Layout {
   return width >= 1024 ? DESKTOP_LAYOUT : MOBILE_LAYOUT;
@@ -66,7 +72,7 @@ export function Partners() {
     <section className="py-24 bg-[#F5F5F0]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-headline text-center mb-4 text-[#0A2540]" style={{ fontSize: 'clamp(2rem, 3vw, 3rem)', fontWeight: 800 }}>
-          <span className="text-[#D8552B]">Khách hàng nổi bật</span> của 102 Creative
+          <span className="text-[#D8552B]">Kh&aacute;ch h&agrave;ng nổi bật</span> của 102 Creative
         </h2>
         <div className="w-24 h-1 bg-[#D4A24C] mx-auto mb-8"></div>
         <p

@@ -57,7 +57,7 @@ export function Stats() {
       id="gioi-thieu"
       className="relative py-24 overflow-hidden bg-[#13304A]"
     >
-      <ParticleBackground />
+      <ParticleBackground count={30} />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
@@ -65,18 +65,15 @@ export function Stats() {
               102 Creative
             </h2>
             <p className="leading-relaxed" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-              <strong style={{ color: 'white' }}>102 Creative</strong> là đơn vị{' '}
-              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Marketing chuyên sâu</span> trong lĩnh vực bất động sản, tập trung vào giải pháp tạo{' '}
+              <strong style={{ color: 'white' }}>102 Creative</strong> là đơn vị Marketing chuyên sâu trong lĩnh vực bất động sản, tập trung vào giải pháp tạo{' '}
               <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>Lead chất lượng</span> và tối ưu chuyển đổi giao dịch.
             </p>
             <p className="leading-relaxed mt-4" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-              Chúng tôi không chỉ triển khai quảng cáo, mà đồng hành cùng doanh nghiệp từ chiến lược đến{' '}
-              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>doanh thu thực tế</span>.
+              Chúng tôi không chỉ triển khai quảng cáo, mà đồng hành cùng doanh nghiệp từ chiến lược đến doanh thu thực tế.
             </p>
             <p className="leading-relaxed mt-4" style={{ color: 'rgba(245,245,240,0.85)', fontSize: '17px', lineHeight: 1.6 }}>
-              Với tư duy dữ liệu và thực chiến thị trường,{' '}
-              <strong style={{ color: 'white' }}>102 Creative</strong> lựa chọn trở thành đối tác tăng trưởng bền vững của những{' '}
-              <span className="font-semibold italic" style={{ color: LOGO_MUSTARD }}>người dẫn đầu</span>.
+              Với tư duy dữ liệu và thực chiến thị trường, <strong style={{ color: 'white' }}>102 Creative</strong> lựa chọn trở thành đối tác tăng trưởng bền vững của những{' '}
+              <span className="font-semibold" style={{ color: LOGO_MUSTARD }}>người dẫn đầu</span>.
             </p>
           </div>
 

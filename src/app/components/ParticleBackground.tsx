@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export function ParticleBackground() {
+export function ParticleBackground({ count = 70 }: { count?: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export function ParticleBackground() {
       vx: number; vy: number;
       r: number; pushCount: number;
     };
-    const PARTICLE_COUNT = 70;
+    const PARTICLE_COUNT = count;
     const MAX_DIST = 140;
     const MOUSE_RADIUS = 180;
     const MOUSE_BOOST = 7;

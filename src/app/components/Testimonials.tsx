@@ -29,15 +29,6 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'Điều 102 Creative làm tốt nhất là minh bạch số liệu. Mỗi tuần đều có báo cáo CPL, CTR cụ thể - không bao giờ phải hỏi lại "ngân sách đang đi đâu".',
-    name: 'Ông Hoàng Phi Long',
-    title: 'CEO',
-    company: 'Long Hoàng Investment',
-    color: '#D4A24C',
-    initials: 'NA',
-  },
-  {
-    quote:
       'Đội 102 không chỉ chạy quảng cáo, họ training cả đội sales của tôi về kịch bản bám đuổi và chốt deal. Đó mới là điểm khác biệt thật sự với một agency.',
     name: 'Bà Nguyễn Thị Nhàn',
     title: 'CEO',

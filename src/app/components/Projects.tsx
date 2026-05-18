@@ -18,6 +18,16 @@ import ttMillenniaCityKML from '@/assets/images/projects/T&TMillenniaCity-KhaiMi
 import dragonEden from '@/assets/images/projects/DragonEden.png';
 import avaCenter from '@/assets/images/projects/AvaCenter.jpg';
 import theGlobalCity from '@/assets/images/projects/TheGlobalCity.jpg';
+import eliteLife from '@/assets/images/projects/EliteLife.jpg';
+import theWinCity from '@/assets/images/projects/TheWinCity.jpg';
+import destinoCentro from '@/assets/images/projects/DestinoCentro.jpg';
+import khaiHoanPrime from '@/assets/images/projects/KhaiHoanPrime.jpeg';
+import khuDanCuBinhChanh from '@/assets/images/projects/KhuDanCuBinhChanh.jpg';
+import diamondSky from '@/assets/images/projects/DiamondSky.jpeg';
+import khaiHoanImperial from '@/assets/images/projects/KhaiHoanImperial.jpg';
+import vinhomesGrandPark from '@/assets/images/projects/VinhomesGrandPark.jpg';
+import theLegacy66 from '@/assets/images/projects/TheLegacy66.webp';
+import theEmeraldBoulevard from '@/assets/images/projects/TheEmeraldBoulevard.jpeg';
 
 import { MapDot } from './MapDot';
 
@@ -48,6 +58,19 @@ const projects: Project[] = [
   { id: 'dragon-eden', name: 'Dragon Eden', area: 'Long An', partner: 'Lương Gia Land', image: dragonEden, coords: { top: '68.5%', left: '36.5%' } },
   { id: 'ava-center', name: 'Ava Center', area: 'Bình Dương', partner: 'Trendy Realty', image: avaCenter, coords: { top: '53%', left: '45.65%' } },
   { id: 'the-global-city', name: 'The Global City', area: 'TP. HCM', partner: 'Khải Minh Land', image: theGlobalCity, coords: { top: '64%', left: '49.25%' } },
+  { id: 'elite-life', name: 'Elite Life', area: 'Long An', partner: 'Việt Á Real', image: eliteLife, coords: { top: '74.75%', left: '46.5%' } },
+  { id: 'dragon-eden-dpn', name: 'Dragon Eden', area: 'Long An', partner: 'Đất Phương Nam', image: dragonEden, coords: { top: '68.5%', left: '36.5%' } },
+  { id: 'the-win-city', name: 'The Win City', area: 'Long An', partner: 'Lương Gia Land', image: theWinCity, coords: { top: '65%', left: '37%' } },
+  { id: 'destino-centro', name: 'Destino Centro', area: 'Long An', partner: 'Thiên Phúc', image: destinoCentro, coords: { top: '62%', left: '38%' } },
+  { id: 'the-global-city-thien-phuc', name: 'The Global City', area: 'TP. HCM', partner: 'Thiên Phúc Group', image: theGlobalCity, coords: { top: '64%', left: '49.25%' } },
+  { id: 'khai-hoan-prime', name: 'Khải Hoàn Prime', area: 'TP. HCM', partner: 'Khải Minh Land', image: khaiHoanPrime, coords: { top: '72%', left: '46%' } },
+  { id: 'khu-dan-cu-binh-chanh', name: 'Khu dân cư Bình Chánh', area: 'TP. HCM', partner: 'Việt Á Real', image: khuDanCuBinhChanh, coords: { top: '72%', left: '44%' } },
+  { id: 'diamond-sky', name: 'Diamond Sky', area: 'TP. HCM', partner: 'Phú Khang Holding', image: diamondSky, coords: { top: '60.5%', left: '46.5%' } },
+  { id: 'the-global-city-nextland', name: 'The Global City', area: 'TP. HCM', partner: 'NextLand', image: theGlobalCity, coords: { top: '64%', left: '49.25%' } },
+  { id: 'khai-hoan-imperial', name: 'Khải Hoàn Imperial', area: 'Bình Dương', partner: 'Khải Minh Land', image: khaiHoanImperial, coords: { top: '54.5%', left: '47%' } },
+  { id: 'vinhomes-grand-park', name: 'Vinhomes Grand Park', area: 'TP. HCM', partner: 'Minh Long Investment', image: vinhomesGrandPark, coords: { top: '60.75%', left: '52%' } },
+  { id: 'the-legacy-66', name: 'The Legacy 66', area: 'TP. HCM', partner: 'Đất Phương Nam', image: theLegacy66, coords: { top: '67%', left: '45%' } },
+  { id: 'the-emerald-boulevard', name: 'The Emerald Boulevard', area: 'Bình Dương', partner: 'Phú Khang Holding', image: theEmeraldBoulevard, coords: { top: '51%', left: '45.5%' } },
 ];
 
 const FILTERS = ['Tất cả', 'HCM', 'Bình Dương', 'Vũng Tàu', 'Long An', 'Đồng Nai'];

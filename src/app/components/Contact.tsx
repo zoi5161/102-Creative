@@ -35,7 +35,7 @@ export function Contact() {
               <div>
                 <p className="text-white/60 mb-1" style={{ fontSize: '14px' }}>Email</p>
                 <a href="mailto:Lhi.networking2025@gmail.com" className="text-white hover:text-[#D4A24C] transition-colors break-all" style={{ fontSize: '18px', fontWeight: 600 }}>
-                  Lhi.networking2025@gmail.com
+                  lhi.networking2025@gmail.com
                 </a>
               </div>
             </div>

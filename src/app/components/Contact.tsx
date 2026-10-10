@@ -22,8 +22,8 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-white/60 mb-1" style={{ fontSize: '14px' }}>Hotline</p>
-                <a href="tel:0888403232" className="text-white hover:text-[#D4A24C] transition-colors" style={{ fontSize: '20px', fontWeight: 600 }}>
-                  0888 40 32 32
+                <a href="tel:0935186102" className="text-white hover:text-[#D4A24C] transition-colors" style={{ fontSize: '20px', fontWeight: 600 }}>
+                  0935 186 102
                 </a>
               </div>
             </div>

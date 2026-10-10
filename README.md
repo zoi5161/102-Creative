@@ -85,6 +85,6 @@ npm run build        # output vào dist/
 
 ## Contact
 
-- Phone: 0888 40 32 32
+- Phone: 0935 186 102
 - Email: Lhi.networking2025@gmail.com
 - Website: www.102creative.vn

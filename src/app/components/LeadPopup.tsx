@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 
-const ZALO_URL = 'https://zalo.me/0888403232';
+const ZALO_URL = 'https://zalo.me/0935186102';
 const DELAY_MS = 8000;
 const SESSION_KEY = '102_lead_popup_closed';
 

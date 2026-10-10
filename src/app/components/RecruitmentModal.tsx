@@ -120,7 +120,7 @@ export function RecruitmentModal({ open, onClose }: Props) {
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
               className="w-full px-4 py-2.5 border border-[#E5E7EB] rounded-sm text-[#1A1A1A] placeholder-[#9CA3AF] focus:outline-none focus:border-[#D4A24C] transition-colors"
               style={{ fontSize: '15px' }}
-              placeholder="0888 40 32 32"
+              placeholder="0935 186 102"
             />
           </div>
 
